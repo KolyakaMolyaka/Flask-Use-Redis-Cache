@@ -1,0 +1,1 @@
+from .logic import process_get_weather_request

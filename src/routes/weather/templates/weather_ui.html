@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Weather Info</title>
+</head>
+
+<body>
+
+<h1>Weather info</h1>
+
+<p>Cache time: 5 seconds.</p>
+<p> Available cities
+<ul>
+    <li>Lipetsk</li>
+    <li>Kaliningrad</li>
+    <li>Moscow</li>
+</ul>
+</p>
+
+
+{% if weather and city %}
+<p>Weather in {{ city }} is {{ weather }}.</p>
+{% endif %}
+
+
+<form method="post" action="{{ url_for('weather_api.get_weather_from_form') }}">
+    <input name="city" placeholder="Enter your city" required
+           {% if city %} value="{{ city }}" {% endif %}
+    >
+    <button type="submit">Get weather</button>
+</form>
+
+</body>
+</html>
