@@ -22,12 +22,15 @@
 ## Демо
 
 Пользователь вводит название города:
+
 ![Enter city](imgs/enter_city.jpg)
 
 Пользователь получает погоду по API:
+
 ![Get city weather](imgs/get_city_weather.jpg)
 
 Пользователь получает погоду из кэша:
+
 ![Get cached city weather](imgs/get_cached_city_weather.jpg)
 
 ## Запуск проекта
